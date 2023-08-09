@@ -3,7 +3,7 @@
 
 
 ## Download
-All versions can be downloaded from the Releases page.
+All versions can be downloaded from the Releases page. (Github still a Work In Progress)
 
 But you can also download this resource pack on [Modrinth](https://modrinth.com/resourcepack/no-break-particles) & [Planet Minecraft](https://www.planetminecraft.com/texture-pack/no-break-particles/).
 
