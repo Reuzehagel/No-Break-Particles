@@ -1,0 +1,42 @@
+name: Mod Support Request
+description: Request Support for any mods here!
+title: "[Mod Support Request] MOD NAME HERE"
+labels: ["mod support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please make sure that this mod isnt already requested in another issue.
+
+        And fill out multiple issues if you want to submit multiple mods. (Otherwise the issue will be labeled as invalid)
+  
+  - type: input
+    id: url
+    attributes:
+      label: Link to the mod page
+      description: Please enter the modpage URL
+      placeholder: "Ex. https://modrinth.com/resourcepack/no-break-particles"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Any information / context you want to provide, go ahead!
+    validations:
+      required: false
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: What Minecraft Version would you like to see supported?
+      multiple: true
+      options:
+        - "1.20"
+        - 1.19
+        - 1.18
+        - 1.17
+        - 1.16
+    validations:
+      required: true
