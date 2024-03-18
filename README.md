@@ -1,22 +1,23 @@
-# No Break Particles
+# The Resource Pack To Keep Your Screen Clean
+No Break Particles removes those crazy breaking particles!
 ![Feature Image](https://i.imgur.com/wNxbpnD.png)
 
+## Compatibility
+| Version       | Supported |
+|---------------|:----------:|
+| 1.20 - 1.20.1 | ✅         |
+| 1.19 - 1.19.4 | ✅         |
+| 1.18 - 1.18.2 | ✅         |
 
-## Download
-All versions can be downloaded from the [Releases](https://github.com/Reuzehagel/No-Break-Particles/releases). (Github still a Work In Progress)
-
-But you can also download this resource pack on [Modrinth](https://modrinth.com/resourcepack/no-break-particles) & [Planet Minecraft](https://www.planetminecraft.com/texture-pack/no-break-particles/).
-
+I so far dont see any reason to add more version, if you do want a new version. Create an issue on my Github.
 
 ## Mod Support
-I will also be working on adding mod support.
-
-Click [here](https://github.com/Reuzehagel/No-Break-Particles/wiki) to go to the Wiki, since I dont want to clutter up this page
-
+Do you want to see your favorite mod without particles?
+Request a mod to be added [here](https://github.com/Reuzehagel/No-Break-Particles/issues/new/choose).
 
 ## Screenshots
-![Normal Block](https://i.imgur.com/T93vTyu.jpg)
+![Image1](https://i.imgur.com/T93vTyu.jpg)
 
-![Breaking Particles](https://i.imgur.com/hlHDdwK.jpg)
+![Image2](https://i.imgur.com/hlHDdwK.jpg)
 
-![No Breaking Particles](https://i.imgur.com/h8rWnzJ.jpg)
+![Image3](https://i.imgur.com/h8rWnzJ.jpg)
