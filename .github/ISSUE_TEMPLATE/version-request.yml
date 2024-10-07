@@ -1,0 +1,40 @@
+name: New Minecraft Version Request
+description: Request support for a new Minecraft version here!
+title: "[New Version Request] VERSION NUMBER HERE"
+labels: ["version request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please make sure that this version isn't already requested in another issue.
+
+        And fill out multiple issues if you want to submit multiple versions. (Otherwise the issue will be labeled as invalid)
+
+  - type: input
+    id: version
+    attributes:
+      label: New Minecraft Version
+      description: Please enter the new Minecraft version number
+      placeholder: "Ex. 1.21"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Any information / context you want to provide, go ahead!
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      multiple: false
+      options:
+        - "High"
+        - "Medium"
+        - "Low"
+    validations:
+      required: true
