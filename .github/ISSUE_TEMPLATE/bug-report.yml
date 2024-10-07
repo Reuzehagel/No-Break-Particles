@@ -1,12 +1,12 @@
-name: Mod Support Request
-description: Request Support for any mods here!
+name: Bug Report
+description: Report bugs here!
 title: "[Bug Report] Title Here"
 labels: ["bug report"]
 body:
   - type: markdown
     attributes:
       value: |
-        Please make sure that this bug isnt already open.
+        Please make sure that this bug isn't already open.
 
         And fill out multiple issues if you want to submit multiple bugs. (Otherwise the issue will be labeled as invalid)
 
@@ -14,7 +14,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: Any information / context you want to provide, go ahead!
+      description: Any information/context you want to provide, go ahead!
     validations:
       required: true
 
@@ -30,7 +30,7 @@ body:
     validations:
       required: true
 
-    - type: input
+  - type: input
     id: url
     attributes:
       label: Link to the page where you downloaded the version
