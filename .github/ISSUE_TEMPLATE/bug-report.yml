@@ -1,0 +1,40 @@
+name: Mod Support Request
+description: Request Support for any mods here!
+title: "[Bug Report] Title Here"
+labels: ["bug report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please make sure that this bug isnt already open.
+
+        And fill out multiple issues if you want to submit multiple bugs. (Otherwise the issue will be labeled as invalid)
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Any information / context you want to provide, go ahead!
+    validations:
+      required: true
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: What version are you reporting a bug for?
+      multiple: false
+      options:
+        - 1.20
+        - 1.19
+        - 1.18
+    validations:
+      required: true
+
+    - type: input
+    id: url
+    attributes:
+      label: Link to the page where you downloaded the version
+      description: Please enter the URL
+      placeholder: "Ex. https://modrinth.com/resourcepack/no-break-particles"
+    validations:
+      required: true
