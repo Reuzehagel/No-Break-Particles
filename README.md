@@ -18,6 +18,7 @@ Request a mod to be added [here](https://github.com/Reuzehagel/No-Break-Particle
 
 ## Screenshots
 Without NBP
-![Without NBP](https://i.imgur.com/kM3QIKy.gif)
+![Without NBP](https://github.com/Reuzehagel/No-Break-Particles/blob/main/Without%20NBP_compressed.gif)
+
 With NBP
-![With NBP](https://i.imgur.com/lkpZfxV.gif)
+![With NBP](https://github.com/Reuzehagel/No-Break-Particles/blob/main/With%20NBP_compressed.gif)
