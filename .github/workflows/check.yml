@@ -1,0 +1,15 @@
+name: Check build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv run check.py
+        env:
+          GH_TOKEN: ${{ github.token }}

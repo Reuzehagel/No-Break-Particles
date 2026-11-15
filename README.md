@@ -7,6 +7,7 @@ Every Minecraft release from 1.8 on. New releases get a pack automatically withi
 
 ## Building
 - `uv run build.py <version> ...` downloads that version's client jar from Mojang and writes `dist/NoBreakParticles.<version>.zip`.
+- `uv run check.py` builds 1.21.4 and fails unless it matches the hand-made 1.21.4 release exactly. CI runs it on every push and before every publish.
 - `uv run test.py <version> ...` loads the built pack in the real game (needs `uv tool install portablemc`) and prints any pack errors from the log.
 - `uv run publish.py` shows which new releases need a pack; `--go` builds them and uploads to CurseForge, Modrinth and a GitHub release. The weekly workflow in `.github/workflows` runs this.
 

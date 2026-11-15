@@ -18,6 +18,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
+      - run: uv run check.py # refuse to publish if build.py no longer matches the golden release
+        env:
+          GH_TOKEN: ${{ github.token }}
       - run: uv run publish.py --go $VERSIONS
         env:
           VERSIONS: ${{ inputs.versions }}
