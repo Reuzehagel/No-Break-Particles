@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "0 6 * * 1" # Mondays 06:00 UTC
   workflow_dispatch:
+    inputs:
+      versions:
+        description: "Packs to publish, space-separated (empty = new releases only)"
+        default: ""
 
 permissions:
   contents: write # create the GitHub release
@@ -14,8 +18,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
-      - run: uv run publish.py --go
+      - run: uv run publish.py --go $VERSIONS
         env:
+          VERSIONS: ${{ inputs.versions }}
           MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
           CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
           GH_TOKEN: ${{ github.token }}
