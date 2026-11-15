@@ -3,14 +3,12 @@ No Break Particles removes those crazy breaking particles!
 ![Feature Image](https://i.imgur.com/wNxbpnD.png)
 
 ## Compatibility
-| Version       | Supported |
-| ------------- | :-------: |
-| 1.21 - 1.21.4 |     ✅     |
-| 1.20 - 1.20.4 |     ✅     |
-| 1.19 - 1.19.4 |     ✅     |
-| 1.18 - 1.18.2 |     ✅     |
+Every Minecraft release from 1.8 on. New releases get a pack automatically within a week.
 
-I so far dont see any reason to add more versions, if you do want a new version. Create an issue on my Github.
+## Building
+- `uv run build.py <version> ...` downloads that version's client jar from Mojang and writes `dist/NoBreakParticles.<version>.zip`.
+- `uv run test.py <version> ...` loads the built pack in the real game (needs `uv tool install portablemc`) and prints any pack errors from the log.
+- `uv run publish.py` shows which new releases need a pack; `--go` builds them and uploads to CurseForge, Modrinth and a GitHub release. The weekly workflow in `.github/workflows` runs this.
 
 ## Mod Support
 Do you want to see your favorite mod without particles?
